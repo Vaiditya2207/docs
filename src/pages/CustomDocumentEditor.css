@@ -1,0 +1,71 @@
+#editor.A4 {
+    width: 210mm; /* A4 width */
+    height: auto; /* Allow height to be flexible */
+    margin: 0 auto; /* Center the editor */
+    border: 1px solid #ccc; /* Optional: Add a border */
+}
+
+#editor.A5 {
+    width: 148mm; /* A5 width */
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+#editor.Letter {
+    width: 8.5in; /* Letter width */
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+.toolbar-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.toolbar-container select,
+.toolbar-container button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    width: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.toolbar-container button:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 0.25rem;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
