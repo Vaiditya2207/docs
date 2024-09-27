@@ -87,7 +87,7 @@ const AuthComponent = (props) => {
                     </span>
 
                     {isLogin ? (
-                        <div style={{ width: "360px", height: "300px" }}>
+                        <div>
                             <div className="py-4">
                                 <span className="mb-2 text-md">Email</span>
                                 <input
